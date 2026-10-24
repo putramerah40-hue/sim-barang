@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIM-Barang - Sistem Informasi Manajemen Barang</title>
+</head>
+<body>
+
+  <header>
+    <h1>SIM-Barang</h1>
+    <p>Sistem Informasi Manajemen Barang</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#inventaris">Inventaris</a></li>
+      <li><a href="#form-barang">Input Barang</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="inventaris">
+      <h2>Tabel Inventaris Barang</h2>
+      <table border="1" cellpadding="6" cellspacing="0">
+        <caption>Daftar barang yang tersimpan</caption>
+        <thead>
+          <tr>
+            <th>Kode</th>
+            <th>Nama Barang</th>
+            <th>Kategori</th>
+            <th>Jumlah</th>
+            <th>Kondisi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>BRG-001</td>
+            <td>Laptop Asus</td>
+            <td>Elektronik</td>
+            <td>10</td>
+            <td>Baik</td>
+          </tr>
+          <tr>
+            <td>BRG-002</td>
+            <td>Meja Kerja</td>
+            <td>Furnitur</td>
+            <td>25</td>
+            <td>Baik</td>
+          </tr>
+          <tr>
+            <td>BRG-003</td>
+            <td>Kursi Kantor</td>
+            <td>Furnitur</td>
+            <td>30</td>
+            <td>Rusak Ringan</td>
+          </tr>
+          <tr>
+            <td>BRG-004</td>
+            <td>Spidol Whiteboard</td>
+            <td>Alat Tulis</td>
+            <td>50</td>
+            <td>Baik</td>
+          </tr>
+          <tr>
+            <td>BRG-005</td>
+            <td>Proyektor</td>
+            <td>Elektronik</td>
+            <td>3</td>
+            <td>Rusak Berat</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="form-barang">
+      <h2>Formulir Input Barang</h2>
+      <form action="#" method="post">
+
+        <p>
+          <label for="kode">Kode Barang</label><br>
+          <input type="text" id="kode" name="kode" placeholder="Contoh: BRG-006" required>
+        </p>
+
+        <p>
+          <label for="nama">Nama Barang</label><br>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan nama barang" required>
+        </p>
+
+        <p>
+          <label for="kategori">Kategori</label><br>
+          <select id="kategori" name="kategori" required>
+            <option value="">-- Pilih kategori --</option>
+            <option value="elektronik">Elektronik</option>
+            <option value="furnitur">Furnitur</option>
+            <option value="alat-tulis">Alat Tulis</option>
+            <option value="lainnya">Lainnya</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="jumlah">Jumlah Barang</label><br>
+          <input type="number" id="jumlah" name="jumlah" placeholder="Masukkan jumlah" min="1" required>
+        </p>
+
+        <p>
+          <label for="kondisi">Kondisi</label><br>
+          <select id="kondisi" name="kondisi" required>
+            <option value="">-- Pilih kondisi --</option>
+            <option value="baik">Baik</option>
+            <option value="rusak-ringan">Rusak Ringan</option>
+            <option value="rusak-berat">Rusak Berat</option>
+          </select>
+        </p>
+
+        <p>
+          <button type="submit">Simpan Barang</button>
+          <button type="reset">Reset</button>
+        </p>
+
+      </form>
+    </section>
+
+    <section id="tentang">
+      <h2>Tentang Aplikasi</h2>
+      <p>SIM-Barang digunakan untuk mencatat dan memantau inventaris barang. Dikerjakan sebagai tugas Praktikum Pemrograman Web.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 SIM-Barang - Rahmad Syaputra (NPM 062530801593)</p>
+  </footer>
+
+</body>
+</html>
